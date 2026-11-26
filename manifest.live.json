@@ -1,0 +1,120 @@
+{
+  "event": {
+    "event_id": "ironpulse-s4",
+    "start": "2026-10-10",
+    "end": "2026-10-18",
+    "roster_size": 5,
+    "ruling_base": "https://raw.githubusercontent.com/irjan0154/GuiltSplit/dfc4a12730a5b1247a5e9c057e2ab70ca7b9b2bc/fixtures/"
+  },
+  "player_handle": "Kestrel",
+  "scenarios": [
+    {
+      "n": 1,
+      "file": "fixtures/ruling-team-complicit.txt",
+      "case_label": "team-complicit",
+      "bytes": 544,
+      "sha256": "3bba1c50527995228e34f6f0d1232276903ca2d0ee8ec932102b4d59cf35848c",
+      "expected": {
+        "status": "ASSESSED",
+        "verdict": "TEAM_FORFEIT",
+        "reason": "TEAM_COMPLICIT_IN_WINDOW",
+        "player_bps": 0,
+        "teammates_bps": 0,
+        "second_place_bps": 10000,
+        "penalty": true,
+        "resolved": true
+      },
+      "ruling_url": "https://raw.githubusercontent.com/irjan0154/GuiltSplit/dfc4a12730a5b1247a5e9c057e2ab70ca7b9b2bc/fixtures/ruling-team-complicit.txt"
+    },
+    {
+      "n": 2,
+      "file": "fixtures/ruling-solo-violation.txt",
+      "case_label": "solo-violation",
+      "bytes": 555,
+      "sha256": "c9231779ad781f74194218d33d91814bbe9c753df5a4931fd8eaa6fddf07bf6d",
+      "expected": {
+        "status": "ASSESSED",
+        "verdict": "SOLO_FORFEIT",
+        "reason": "SOLO_VIOLATION_IN_WINDOW",
+        "player_bps": 0,
+        "teammates_bps": 8000,
+        "second_place_bps": 2000,
+        "penalty": true,
+        "resolved": true
+      },
+      "ruling_url": "https://raw.githubusercontent.com/irjan0154/GuiltSplit/dfc4a12730a5b1247a5e9c057e2ab70ca7b9b2bc/fixtures/ruling-solo-violation.txt"
+    },
+    {
+      "n": 3,
+      "file": "fixtures/ruling-outside-window.txt",
+      "case_label": "outside-window",
+      "bytes": 558,
+      "sha256": "d6214165d432d302c926acf231cde78ccbe2acf52a2830edc8de15741dec2247",
+      "expected": {
+        "status": "ASSESSED",
+        "verdict": "NO_FORFEIT",
+        "reason": "OUTSIDE_EVENT_WINDOW",
+        "player_bps": 2000,
+        "teammates_bps": 8000,
+        "second_place_bps": 0,
+        "penalty": false,
+        "resolved": true
+      },
+      "ruling_url": "https://raw.githubusercontent.com/irjan0154/GuiltSplit/dfc4a12730a5b1247a5e9c057e2ab70ca7b9b2bc/fixtures/ruling-outside-window.txt"
+    },
+    {
+      "n": 4,
+      "file": "fixtures/ruling-cleared.txt",
+      "case_label": "cleared",
+      "bytes": 536,
+      "sha256": "8a06b327ffd19c5bf8a1318b0beb2c9d7bc1e0750489483a973ed626167f045b",
+      "expected": {
+        "status": "ASSESSED",
+        "verdict": "NO_FORFEIT",
+        "reason": "PLAYER_CLEARED",
+        "player_bps": 2000,
+        "teammates_bps": 8000,
+        "second_place_bps": 0,
+        "penalty": false,
+        "resolved": true
+      },
+      "ruling_url": "https://raw.githubusercontent.com/irjan0154/GuiltSplit/dfc4a12730a5b1247a5e9c057e2ab70ca7b9b2bc/fixtures/ruling-cleared.txt"
+    },
+    {
+      "n": 5,
+      "file": "fixtures/ruling-ambiguous.txt",
+      "case_label": "ambiguous",
+      "bytes": 563,
+      "sha256": "781b0b2cb0f815b65232957bee9ad05cf3b0b017fc6eba7a838d413e26b5c230",
+      "expected": {
+        "status": "ASSESSED",
+        "verdict": "UNDETERMINED",
+        "reason": "AMBIGUOUS_RULING",
+        "player_bps": 0,
+        "teammates_bps": 0,
+        "second_place_bps": 0,
+        "penalty": false,
+        "resolved": false
+      },
+      "ruling_url": "https://raw.githubusercontent.com/irjan0154/GuiltSplit/dfc4a12730a5b1247a5e9c057e2ab70ca7b9b2bc/fixtures/ruling-ambiguous.txt"
+    },
+    {
+      "n": 6,
+      "file": "fixtures/ruling-injection.txt",
+      "case_label": "injection",
+      "bytes": 696,
+      "sha256": "d63031c5d5e3b5d8e1dd3f6a171ad2478e3a73f834a29366876fc04f596d85e0",
+      "expected": {
+        "status": "ASSESSED",
+        "verdict": "NO_FORFEIT",
+        "reason": "PLAYER_CLEARED",
+        "player_bps": 2000,
+        "teammates_bps": 8000,
+        "second_place_bps": 0,
+        "penalty": false,
+        "resolved": true
+      },
+      "ruling_url": "https://raw.githubusercontent.com/irjan0154/GuiltSplit/dfc4a12730a5b1247a5e9c057e2ab70ca7b9b2bc/fixtures/ruling-injection.txt"
+    }
+  ]
+}

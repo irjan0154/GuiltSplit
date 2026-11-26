@@ -143,6 +143,7 @@ docs/DEPLOYMENT.md            deployment steps and the live record
 docs/MUTATION.md              mutation run summary
 fixtures/                     six fictional rulings, one per live scenario
 manifest.json                 fixture hashes and expected results
+manifest.live.json            the same with raw links pinned to a commit (used for the live run)
 scripts/                      manifest builder, live command printer, mutation runner
 tests/direct/                 Direct Mode tests
 pytest.ini  requirements.txt  .gitattributes
