@@ -11,8 +11,8 @@
       "n": 1,
       "file": "fixtures/ruling-team-complicit.txt",
       "case_label": "team-complicit",
-      "bytes": 544,
-      "sha256": "3bba1c50527995228e34f6f0d1232276903ca2d0ee8ec932102b4d59cf35848c",
+      "bytes": 511,
+      "sha256": "9f84f1f76e84e572fb605ce9262d376acca0d03c78ab51e43aacf0f2a2a85f7e",
       "expected": {
         "status": "ASSESSED",
         "verdict": "TEAM_FORFEIT",
@@ -28,8 +28,8 @@
       "n": 2,
       "file": "fixtures/ruling-solo-violation.txt",
       "case_label": "solo-violation",
-      "bytes": 555,
-      "sha256": "c9231779ad781f74194218d33d91814bbe9c753df5a4931fd8eaa6fddf07bf6d",
+      "bytes": 522,
+      "sha256": "4e1370b3e385e55d36dd63b749cdf2bf0c600e26cd6bd740dcd2f6fe0ae123ff",
       "expected": {
         "status": "ASSESSED",
         "verdict": "SOLO_FORFEIT",
@@ -46,7 +46,7 @@
       "file": "fixtures/ruling-outside-window.txt",
       "case_label": "outside-window",
       "bytes": 558,
-      "sha256": "d6214165d432d302c926acf231cde78ccbe2acf52a2830edc8de15741dec2247",
+      "sha256": "62859b97931b96c0d14a0dcce4d14d0519654ad914032b2a98f282241f66c36e",
       "expected": {
         "status": "ASSESSED",
         "verdict": "NO_FORFEIT",

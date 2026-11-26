@@ -109,7 +109,7 @@ Errors never turn into penalties: every failed or disagreeing path leaves the ca
 
 All examples use the fixtures in `fixtures/`; the tests named are in `tests/direct/`.
 
-**1. Honest solo violation (`ruling-solo-violation.txt`).** The leader returns `finding = SOLO_VIOLATION`, `dates = ["2026-10-16"]`, and for both quotes the sentence "On 2026-10-16 the committee reviewed the final-map footage and finds that Kestrel used a radar hack during the final map." The validator's model words things differently but reaches the same finding and date, so the four fields match and the leader's quotes are found in the validator's copy. The result is accepted; `decide` gives `SOLO_FORFEIT`, 0 / 8000 / 2000 for roster 5. (`test_fixtures.py`: scenario run and `test_validator_agrees_with_the_honest_leader`.)
+**1. Honest solo violation (`ruling-solo-violation.txt`).** The leader returns `finding = SOLO_VIOLATION`, `dates = ["2026-10-16"]`, and for both quotes the sentence "The committee finds that on 2026-10-16, during the final map, Kestrel used a radar hack." The validator's model words things differently but reaches the same finding and date, so the four fields match and the leader's quotes are found in the validator's copy. The result is accepted; `decide` gives `SOLO_FORFEIT`, 0 / 8000 / 2000 for roster 5. (`test_fixtures.py`: scenario run and `test_validator_agrees_with_the_honest_leader`.)
 
 **2. Forged finding.** The leader claims `TEAM_COMPLICIT` for the same ruling. The validator's round says `SOLO_VIOLATION`; the `finding` field differs, so it disagrees. (`test_validator.py`: "flipped finding".)
 
